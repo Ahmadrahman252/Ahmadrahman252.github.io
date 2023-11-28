@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'monospace';
+    background-image: url(assets/img/7951379690780.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     background-color: rgba(255, 255, 255, 0.0);
     padding: 20px;
@@ -23,7 +32,7 @@ header img {
 
 nav {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     line-height: 50px;
 }
@@ -117,7 +126,6 @@ button {
 }
 .btn-biru {
     color:  #ffffff;
-
 }
 
 section img {
@@ -133,4 +141,50 @@ section img {
 
 footer p {
     font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        height: 30px;
+    }
+
+    nav {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    nav ul {
+        margin-right: 0;
+    }
+
+    nav ul li {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .column {
+        margin: 20px;
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
